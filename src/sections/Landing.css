@@ -1,0 +1,44 @@
+#home-section {
+  position: relative;
+}
+
+#landing-title-container {
+  height: 50%;
+  padding-top: 2rem;
+}
+
+#landing-title {
+  color: var(--primary-colour);
+  font-size: 4rem;
+}
+
+.landing-image {
+  height: 50%;
+  background-image: url("dominic.jpeg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 800px) {
+  .landing-image {
+    height: 100%;
+    width: 50%;
+  }
+
+  #landing-title-container {
+    padding-top: 0;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  #landing-title {
+    font-size: 6rem;
+    text-align: center;
+    width: 100%;
+  }
+}
